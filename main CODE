@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شمارش حروف</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            padding: 50px;
+            text-align: center;
+        }
+        input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<h2>تعداد حروف عبارت خود را بشمارید</h2>
+<input type="text" id="textInput" placeholder="عبارت خود را وارد کنید">
+<button id="countBtn">محاسبه تعداد حروف</button>
+
+<div id="result"></div>
+
+<script>
+    document.getElementById('countBtn').addEventListener('click', function() {
+        var text = document.getElementById('textInput').value;
+        var letterCount = text.length;
+        document.getElementById('result').textContent = 'تعداد حروف عبارت شما: ' + letterCount;
+    });
+</script>
+
+</body>
+</html>
+google-site-verification: google747c9df58fb427fb.html
